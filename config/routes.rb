@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'accounts/show'
+  get 'accounts/edit'
   root 'top#index'
   
   get "about" => "top#about", as: "about"
@@ -13,4 +15,5 @@ Rails.application.routes.draw do
   end
 
   resource :session, only:[:create, :destroy]
+  resource :account, only:[:show, :edit, :update]
 end
