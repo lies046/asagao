@@ -3,6 +3,7 @@
 
 <div class = "toolbar">
   <%= link_to "アカウント情報の編集", [:edit, @member]%>
+  <%= menu_link_to "パスワードの変更", :edit_password%>
 </div>
 
 <%= render "members/body" %>
