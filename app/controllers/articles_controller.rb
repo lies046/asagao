@@ -9,6 +9,7 @@ class ArticlesController < ApplicationController
         current_member&.administrator?
         @articles = @articles.visible
       end
+      @articles = @articles.page(params[:page]).per(5)
   end
 
   def show
