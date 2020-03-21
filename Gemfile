@@ -60,3 +60,5 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'email_validator', '~> 2.0', '>= 2.0.1'
 gem 'rails-i18n'
+gem 'kaminari'
+gem 'kaminari-i18n'
