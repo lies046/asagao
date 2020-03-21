@@ -17,6 +17,6 @@ module Asagao
     # the framework and any gems in your application.
     config.time_zone = "Tokyo"
     config.i18n.default_locale = :ja
-    config.action_controller.permit_all_parameters = true
+    config.action_controller.permit_all_parameters = false
     end
 end
