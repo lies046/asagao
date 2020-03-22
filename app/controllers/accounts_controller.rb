@@ -21,6 +21,7 @@ class AccountsController < ApplicationController
   private
   def account_params
     params.require(:account).permit(
+      :new_profile_picture,
       :number,
       :name,
       :full_name,

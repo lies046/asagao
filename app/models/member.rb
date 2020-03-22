@@ -1,6 +1,8 @@
 class Member < ApplicationRecord
   has_secure_password
   has_many :entries, dependent: :destroy
+  has_one_attached :profile_picture
+  attribute :new_profile_picture
   validates :number, presence: true,
   numericality:{
     only_integer: true,
