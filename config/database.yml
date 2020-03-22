@@ -50,5 +50,5 @@ test:
 production:
   <<: *default
   database: asagao_production
-  username: asagao
+  username: root
   password: <%= ENV['ASAGAO_DATABASE_PASSWORD'] %>
